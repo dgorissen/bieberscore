@@ -2,6 +2,7 @@
   (:require [clj-http.client :as client]
             [clojure.xml :as xml]
             [clojure.zip :as zip]
+            [net.cgrand.enlive-html :as html]
             )
   (:use clojure.pprint)
   (:use clojure.data.zip.xml)
@@ -55,8 +56,17 @@
    )
 )
 
+(defn scrape-lyrics [artist title]
+  (let [url (str "http://lyrics.wikia.com/" artist ":" title)
+        data (html/html-resource (java.net.URL. url))
+        ]
+    (map html/text (html/at (html/select data [:div.lyricbox]) [:div.rtMatcher] nil))
+    )
+)
+
 (defn -main
   "I don't do a whole lot."
   [& args]
   (println (album-tracks (first (top-albums (first (top-artists "dgorissen"))))))
+  (pprint (count (scrape-lyrics "eminem" "stan")))
   )
