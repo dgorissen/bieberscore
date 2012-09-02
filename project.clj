@@ -10,5 +10,6 @@
                  [org.clojure/data.zip "0.1.1"]
                  [org.clojars.gjahad/debug-repl "0.3.1"]
                  [enlive "1.0.1"]
+                 [stemmers "0.2.1"]
                  ]
   )
