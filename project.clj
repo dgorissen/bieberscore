@@ -1,8 +1,8 @@
 (defproject bieberscore "1.0"
   :description "Analyzing lyrical complexity, a toy example for learning clojure"
-  :url "http://dirkgorissen.com/blog/FIXME"
+  :url "https://github.com/dgorissen/bieberscore"
   :license {:name "Apache License 2.0"
-            :url "http://www.apache.org/licenses"}
+            :url "http://www.apache.org/licenses/LICENSE-2.0.html"}
   :main bieberscore.core
   :dependencies [
                  [org.clojure/clojure "1.4.0"]

@@ -1,8 +1,8 @@
 # bieberscore
 
-Analyzing lyrical complexity, a toy example for learning clojure. The full background story can be found in this blog post:
+Analyzing lyrical complexity, a toy example for learning clojure. The background story can be found in this blog post:
 
-<http://dirkgorissen.com/blog/....>
+<http://dirkgorissen.com/2012/09/04/learning-clojure-whats-your-bieberscore>
 
 This is a toy example so don't complain that the scoring algorithm does not work in case x or y. It's not meant to be fool proof.
 
